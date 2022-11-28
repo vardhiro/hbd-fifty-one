@@ -90,8 +90,9 @@
         var blown = document.getElementById("blown")
         var btn = document.getElementById("btn")
         var ds = document.getElementById("ds")
+        var d = new Date()
         
-        days = (Date.getTime() - 60244200000)/86400 * 1000
+        days = (d.getTime() - 60244200000)/86400 * 1000
         
         glowing.style.height = '0'
         blown.style.height = 'auto'
