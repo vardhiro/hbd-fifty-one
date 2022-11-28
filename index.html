@@ -89,11 +89,16 @@
         var glowing = document.getElementById("glowing")
         var blown = document.getElementById("blown")
         var btn = document.getElementById("btn")
+        var ds = document.getElementById("ds")
+        
+        days = getMilliseconds() - 60244200000
         
         glowing.style.height = '0'
         blown.style.height = 'auto'
         btn.innerHTML = "YAY! HAPPY BIRTHDAY!"
-
+        ds.innerHTML = days
+        
+        
     }
 </script>
 </html>
