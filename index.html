@@ -89,17 +89,15 @@
         var glowing = document.getElementById("glowing")
         var blown = document.getElementById("blown")
         var btn = document.getElementById("btn")
-        var ds = document.getElementById("ds")
-        var d = new Date()
-        
-        var din = Math.floor((d.getTime() - 60244200000)/(86400 * 1000))
         
         glowing.style.height = '0'
         blown.style.height = 'auto'
         btn.innerHTML = "YAY! HAPPY BIRTHDAY!" 
-        ds.innerHTML = din 
-        
-        
     }
+    var ds = document.getElementById("ds") 
+    var d = new Date() 
+    var din = Math.floor((d.getTime() - 60244200000)/(86400 * 1000))
+    ds.innerHTML = din  
+
 </script>
 </html>
