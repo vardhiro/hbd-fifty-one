@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 51 years of your life !</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background: linear-gradient(to right, rgb(139, 86, 86), rgba(146, 68, 68, 0.634));
+        }
+        .card{
+            width: 75%;
+            color: white;
+            background: linear-gradient(to right, green, orange);
+            padding: 15px;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .heading{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .msg{
+            font-family: ubuntu;
+            font-size: 1.1rem;
+        }
+        .surv{
+            text-align: center;
+            padding: 15px;
+            border: 1px solid white;
+            font-family: monospace;
+            font-size: 1.2rem;
+        }
+        .hlt{
+            font-family: monospace;
+            color: peachpuff;
+        }
+        @media(max-width:700px){
+            .card{
+                width: 90%;
+            }
+        }
+
+        img{
+            width: 50%;
+        }
+
+        img#blown{
+            height: 0px;
+        }
+
+        button#btn{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 class="heading">Happy <s>50th</s> log<sub>10</sub>10<sup>51 st</sup> birthday!</h1>
+        <div class="surv">
+            <font color="pink">Days survived</font> = <span class="ds">18627</span>
+        </div><br>
+        <div class="msg">
+            Happy 51st birthday and <span class="hlt">CONGRATULATIONS</span> on surviving {(51x365) + (48/4)} = 18,627 days. Wishing you a better life ahead... 
+            <br><br>
+            PS: The no. of days survived will keep on incrementing until you die.
+        </div>
+        <br><hr>
+        <center>
+            <button onclick="blowout()" id="btn">Blow out the candle (Fuuuu)!</button><br><br>
+            <img src="glowing.png" alt="" id="glowing">
+            <img src="blown.png" alt="" id="blown"> 
+        </center>
+        
+        <br>
+        <hr>
+        <div class="share">
+                
+        </div>
+    </div>
+</body>
+<script>
+    function blowout(){
+        var glowing = document.getElementById("glowing")
+        var blown = document.getElementById("blown")
+        var btn = document.getElementById("btn")
+        
+        glowing.style.height = '0'
+        blown.style.height = 'auto'
+        btn.innerHTML = "YAY! HAPPY BIRTHDAY!"
+
+    }
+</script>
+</html>
